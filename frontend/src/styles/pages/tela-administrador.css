@@ -16,6 +16,7 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
+    padding: 20px;
 }
 
 .content .introducao h1 {
@@ -33,7 +34,7 @@
 .content .introducao .link button {
     margin-top: 40px;
     width: 100%;
-    height: 50px;
+    height: 60px;
     border-radius: 10px;
     background-color: #8FB8F2;
     border-color: transparent;
@@ -137,4 +138,24 @@
 
 .content .cards .botoes img {
     width: 70%;
+}
+
+.navbar .barra-de-busca {
+    display: none;;
+}
+.navbar .acesso {
+    display: none;
+}
+.navbar .logo {
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width:570px) {
+    .content .cards .card1 .imagem-card {
+        margin-top: 0px;
+    }
+    .content .cards .card1 .imagem-card img {
+        border-radius: 10px 10px 0px 0px;
+    }
 }

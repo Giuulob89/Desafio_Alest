@@ -55,7 +55,6 @@ body, input, button, textarea {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 15%;
-    text-align: center;
 }
 
 .navbar .acesso .login, .cadastro {
@@ -79,4 +78,17 @@ body, input, button, textarea {
 .footer .nome-site p {
     color: #ffffff;
     font: 400 20px Oswald, sans-serif;
+}
+
+@media only screen and (max-width:570px) {
+    .navbar .barra-de-busca {
+        display: none;;
+    }
+    .navbar .acesso {
+        display: none;
+    }
+    .navbar .logo {
+        display: flex;
+        justify-content: center;
+    }
 }

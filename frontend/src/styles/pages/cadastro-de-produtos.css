@@ -25,6 +25,7 @@
     background-color: #ffffff;
     opacity: 0.5;
     cursor: pointer;
+    text-align: center;
 }
 
 .imagem:hover {
@@ -62,6 +63,7 @@
 .nome label, .marca label, .preco label, .informacoes label {
     font: 700 20px Quicksand, sans-serif;
     color: #545454;
+    text-align: center;
 }
 
 .nome input, .marca input, .preco input, .informacoes input {
@@ -71,6 +73,7 @@
     outline-style: none;
     margin-top: 10px;
     border: 2px solid #A6A6A6;
+    margin-right: 10px;
 }
 
 .cadastrar {
@@ -96,4 +99,27 @@
 
 .cadastrar button:hover {
     box-shadow: 0.1em 0.1em gray;
+}
+
+.navbar .barra-de-busca {
+    display: none;;
+}
+.navbar .acesso {
+    display: none;
+}
+.navbar .logo {
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width:800px) {
+    .nome input, .marca input, .preco input, .informacoes input {
+        margin-right: 0px;
+    }
+}
+
+@media only screen and (max-width:380px) {
+    .nome input, .marca input, .preco input, .informacoes input {
+        width: 250px
+    }
 }
