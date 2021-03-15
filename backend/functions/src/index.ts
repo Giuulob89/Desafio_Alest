@@ -1,17 +1,29 @@
 import * as functions from "firebase-functions";
+import * as admin from "firebase-admin";
+admin.initializeApp(functions.config().firebase);
 import * as express from "express";
 
 import { clientecontroller } from './controller/exportControllers';
-
-const admin = require("firebase-admin");
-
-const serviceAccount = require("../src/config/desafio-alest-firebase-adminsdk-sy5l6-21201eebf9.json");
+import firebase from "firebase";
 
 admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount)
+  credential: admin.credential.cert("../src/config/desafio-alest-firebase-adminsdk-sy5l6-21201eebf9.json"),
+  databaseURL: "https://desafio-alest-default-rtdb.firebaseio.com/"
 });
 
-admin.initializeApp(functions.config().firebase)
+var firebaseConfig = {
+  apiKey: "AIzaSyBPdh5enGZvuh4whgaoUkR7nkQUYh2sa2U",
+  authDomain: "desafio-alest.firebaseapp.com",
+  databaseURL: "https://desafio-alest-default-rtdb.firebaseio.com",
+  projectId: "desafio-alest",
+  storageBucket: "desafio-alest.appspot.com",
+  messagingSenderId: "886100925342",
+  appId: "1:886100925342:web:ea0d5c1014f9bc3aab548f",
+  measurementId: "G-CWVY4ZHVX4"
+};
+
+firebase.initializeApp(firebaseConfig);
+export default firebase;
 
 /*  APPS  */
 let app = express();
