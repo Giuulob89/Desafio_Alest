@@ -33,10 +33,17 @@
     width: 160px;
     height: 80px;
     border-radius: 10px;
+    box-shadow: 0.1em 0.1em #A6A6A6;
+    transition: 0.3s;
+    margin-bottom: 20px;
 
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.marcas .selecao-marcas .marca1:hover, .marca2:hover, .marca3:hover, .marca4:hover {
+    box-shadow: 0.3em 0.3em #A6A6A6;
 }
 
 .marcas .selecao-marcas .marca1 {
@@ -66,33 +73,44 @@
 }
 
 .produtos .selecao-produtos .produto1, .produto2, .produto3, .produto4 {
-    width: 250px;
-    height: 340px;
+    width: 240px;
+    height: 450px;
     border: 2px solid #A6A6A6;
     border-radius: 10px;
     margin-bottom: 30px;
+    box-shadow: 0.1em 0.1em #A6A6A6;
+    transition: 0.3s;
 
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
+}
 
-    font: 700 20px Quicksand, sans-serif;
+.produtos .selecao-produtos .produto1:hover, .produto2:hover, .produto3:hover, .produto4:hover {
+    box-shadow: 0.3em 0.3em #A6A6A6;
 }
 
 .produtos .selecao-produtos .produto1 img, .produto2 img, .produto3 img, .produto4 img {
     width: 100.3%;
-    height: 55%;
+    height: 45%;
     border-radius: 10px 10px 0px 0px;
 }
 
 .produtos .selecao-produtos .produto1 h4, .produto2 h4, .produto3 h4, .produto4 h4 {
     color: #BD6124;
+    font: 700 20px Quicksand, sans-serif;
+    text-align: center;
+}
+
+.produtos .selecao-produtos .produto1 .preco, .produto2 .preco, .produto3 .preco, .produto4 .preco {
+    color: #214270;
+    font: 700 20px Quicksand, sans-serif;
 }
 
 .produtos .selecao-produtos .produto1 p, .produto2 p, .produto3 p, .produto4 p {
-    color: #214270;
-    font-size: 20px;
+    color: #545454;
+    text-align: center;
 }
 
 .produtos .selecao-produtos .produto1 button, .produto2 button, .produto3 button, .produto4 button {
@@ -102,4 +120,10 @@
     padding: 12px;
     border-color: transparent;
     border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0.3em 0.3em gray;
+}
+
+.produtos .selecao-produtos .produto1 button:hover, .produto2 button:hover, .produto3 button:hover, .produto4 button:hover {
+    box-shadow: 0.1em 0.1em gray;
 }

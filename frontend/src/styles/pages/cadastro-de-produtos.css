@@ -23,7 +23,8 @@
     border-radius: 10px;
     padding: 30px;
     background-color: #ffffff;
-    opacity: 0.7;
+    opacity: 0.5;
+    cursor: pointer;
 }
 
 .imagem:hover {
@@ -62,7 +63,6 @@
     font: 700 20px Quicksand, sans-serif;
     color: #545454;
 }
-
 
 .nome input, .marca input, .preco input, .informacoes input {
     width: 350px;

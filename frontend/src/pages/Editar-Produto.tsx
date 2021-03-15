@@ -3,7 +3,7 @@ import '../styles/pages/cadastro-de-produtos.css';
 import logoImg from '../images/BELEZA VIRTUAL 1.svg';
 import { Link } from 'react-router-dom';
 
-function CadastroProdutos() {
+function EditarProduto() {
     return (
         <div id="cadastro-produtos">
             <div className="navbar">
@@ -12,9 +12,9 @@ function CadastroProdutos() {
                 </div>
             </div>
             <div className="formulario">
-                <h1>Cadastrar novo produto</h1>
+                <h1>Editar informações do produto</h1>
                 <div className="imagem">
-                    <p>+ Adicionar Imagem</p>
+                    <p>+ Trocar Imagem</p>
                 </div>
                 <div className="perguntas">
                     <div className="secao1">
@@ -39,7 +39,7 @@ function CadastroProdutos() {
                     </div>
                 </div>
                 <div className="cadastrar">
-                    <Link to = "/"><button>Finalizar cadastro</button></Link>
+                    <Link to = "/"><button>Finalizar Edição</button></Link>
                 </div>
             </div>
             <div className="footer">
@@ -51,4 +51,4 @@ function CadastroProdutos() {
     );
 }
 
-export default CadastroProdutos;
+export default EditarProduto;

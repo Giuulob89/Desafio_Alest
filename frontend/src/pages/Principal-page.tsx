@@ -45,25 +45,33 @@ function Principal_Page() {
                     <div className="produto1">
                         <img src={poImg} alt="po compacto" />
                         <h4>PÓ COMPACTO</h4>
-                        <p>R$20,00</p>
+                        <p>Marca 2</p>
+                        <div className = "preco">R$20,00</div>
+                        <p>Produto exclusivo Beleza Virtual</p>
                         <button>COMPRAR</button>
                     </div>
                     <div className="produto2">
                         <img src={poImg} alt="po compacto" />
                         <h4>PÓ COMPACTO</h4>
-                        <p>R$20,00</p>
+                        <p>Marca 2</p>
+                        <div className = "preco">R$20,00</div>
+                        <p>Produto exclusivo Beleza Virtual</p>
                         <button>COMPRAR</button>
                     </div>
                     <div className="produto3">
                         <img src={poImg} alt="po compacto" />
                         <h4>PÓ COMPACTO</h4>
-                        <p>R$20,00</p>
+                        <p>Marca 2</p>
+                        <div className = "preco">R$20,00</div>
+                        <p>Produto exclusivo Beleza Virtual</p>
                         <button>COMPRAR</button>
                     </div>
                     <div className="produto4">
                         <img src={poImg} alt="po compacto" />
                         <h4>PÓ COMPACTO</h4>
-                        <p>R$20,00</p>
+                        <p>Marca 2</p>
+                        <div className = "preco">R$20,00</div>
+                        <p>Produto exclusivo Beleza Virtual</p>
                         <button>COMPRAR</button>
                     </div>
                 </div>
