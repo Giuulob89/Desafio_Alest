@@ -1,5 +1,5 @@
 import { clientebusiness } from '../../business/exportBusiness';
-//import { Cliente } from '../../interface/exportInterface'
+import { Cliente } from '../../interface/exportInterface'
 
 class ClienteController {
     getClienteById = (idCliente: string) => {
@@ -8,8 +8,8 @@ class ClienteController {
     getCliente = () => {
         return clientebusiness.getCliente();
     } 
-    postCliente = () => {
-        return clientebusiness.postCliente();
+    createCliente = (cliente: Cliente) => {
+        return clientebusiness.createCliente(cliente);
     } 
     putCliente = () => {
         return clientebusiness.putCliente();

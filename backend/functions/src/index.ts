@@ -3,13 +3,15 @@ import * as express from "express";
 
 import { clientecontroller } from './controller/exportControllers';
 
-let admin = require("firebase-admin");
+const admin = require("firebase-admin");
 
 const serviceAccount = require("../src/config/desafio-alest-firebase-adminsdk-sy5l6-21201eebf9.json");
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount)
 });
+
+admin.initializeApp(functions.config().firebase)
 
 /*  APPS  */
 let app = express();
@@ -24,7 +26,7 @@ app.get('/', function(req, res) {
 clientes.get('/:idCliente', (req, res) => { res.json(clientecontroller.getClienteById(req.params.idCliente)) });
 clientes.route('/') 
     .get((req, res) => {res.json ( clientecontroller.getCliente() )})
-    .post((req, res) => {res.json( clientecontroller.postCliente() )})
+    .post((req, res) => {res.json( clientecontroller.createCliente(req.body) )})
     .put((req, res) => {res.json( clientecontroller.putCliente() )})
     .delete((req, res) => {res.json( clientecontroller.deleteCliente() )})
 

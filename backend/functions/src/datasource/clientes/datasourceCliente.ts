@@ -1,3 +1,6 @@
+import * as admin from "firebase-admin";
+const db = admin.firestore();
+
 import { Cliente, MessageTreatment } from "../../interface/exportInterface";
 import { messagetreatmentbusiness } from '../../business/exportBusiness';
 
@@ -9,8 +12,9 @@ class ClienteDataSource {
     getClienteById = (idCliente:string) => {
         return {name: `Giulia get - id ${idCliente}`};
     }
-    postCliente = () => {
-        return {name: `Giulia post`};
+    createCliente = (cliente: Cliente): MessageTreatment => {
+        const res = db.collection('cliente').doc().set(cliente);
+        return messagetreatmentbusiness.successMsg(`Cliente adicionado`, res);
     } 
     putCliente = () => {
         return {name: `Giulia put`};
