@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+body, input, button, textarea {
+    font: 500 18px Quicksand, sans-serif;
+}
+
+/*  NAVBAR  */
+
+.navbar {
+    background-color: #468CF0;
+    width: 100%;
+    height: 150px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navbar .barra-de-busca {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 20%;
+}
+
+.navbar .barra-de-busca img {
+    width: 24px;
+}
+
+.navbar .barra-de-busca input {
+    background-color: #ffffff;
+    opacity: 0.7;
+    width: 85%;
+    height: 40px;
+    border-radius: 10px;
+    border-color: transparent;
+    outline-style: none;
+}
+
+.navbar .logo img {
+    width: 80%;
+}
+
+.navbar .acesso {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 15%;
+}
+
+.navbar .acesso .login, .cadastro {
+    color: #ffffff;
+    font: 700 20px Quicksand, sans-serif;
+}
+
+/*  FOOTER  */
+
+.footer {
+    position: absolute;
+    background-color: #468CF0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    align-self: flex-end;
+    justify-content: center;
+}
+
+.footer .nome-site p {
+    color: #ffffff;
+    font: 400 20px Oswald, sans-serif;
+}
+
+@media only screen and (max-width:570px) {
+    .navbar .barra-de-busca {
+        display: none;;
+    }
+    .navbar .acesso {
+        display: none;
+    }
+    .navbar .logo {
+        display: flex;
+        justify-content: center;
+    }
+}
